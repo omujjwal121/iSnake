@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iSnake</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">iSnake</nav>
+    <main>
+        <aside class="panels left-panel">
+            <div class="stats">
+                <div class="stat">
+                    <p class="label">Score</p>
+                    <p class="value" id="score-value">0</p>
+                </div>
+                <div class="stat">
+                    <p class="label">Best Score</p>
+                    <p class="value" id="best-score">0</p>
+                </div>
+                <div class="stat">
+                    <p class="label">Snake Length</p>
+                    <p class="value" id="snake-length">0</p>
+                </div>
+                <div class="stat">
+                    <p class="label">Speed</p>
+                    <p class="value">0</p>
+                </div>
+            </div>
+            <div class="speed-status">
+                <p class="label">Next Speed</p>
+                <p class="value">Normal</p>
+                <p class="progress-text">320/500</p>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="control">
+                    <div class="keys">
+                        <div class="row">
+                            <div class="key">↑</div>
+                        </div>
+                        <div class="row">
+                            <div class="key">←</div>
+                            <div class="key">↓</div>
+                            <div class="key">→</div>
+                        </div>
+                    </div>
+                    <div class="action">Move Snake</div>
+                </div>
+                <div class="control">
+                    <div class="key space-key">Space</div>
+                    <div class="action">Play / Pause</div>
+                </div>
+                <div class="control">
+                    <div class="keys">
+                        <div class="key speed-change-key">+ / -</div>
+                    </div>
+                    <div class="action">Change Speed</div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="game-area"><canvas id="game-screen"></canvas></section>
+        
+        <aside class="panels right-panel">
+            <div class="game-status">
+                <div class="current-speed">
+                    <p class="label">Current Speed</p>
+                    <p class="value">Normal</p>
+                </div>
+            </div>
+            <div class="speed-boost">
+                <div class="label">Speed Boost</div>
+                <div class="description">Increase Your Speed</div>
+                <div class="selected">Normal</div>
+                <div class="boost-option">
+                    <div class="icon">Snake Icon</div>
+                    <div class="name">Fast</div>
+                    <div class="cost">
+                        <div class="coin">logo</div>
+                        <div class="cost">+50</div>
+                    </div>
+                </div>
+                <div class="boost-option">
+                    <div class="icon">Snake Icon</div>
+                    <div class="name">Turbo</div>
+                    <div class="cost">
+                        <div class="coin">logo</div>
+                        <div class="cost">+100</div>
+                    </div>
+                </div>
+            </div>
+            <div class="legend">
+                <div class="label">LEGEND</div>
+                <div class="legend-item">
+                    <div class="icon">logo</div>
+                    <div class="text">You (Snake)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="icon">logo</div>
+                    <div class="text">Prey (Food)</div>
+                </div>
+                <div class="legend-item">
+                    <div class="icon">logo</div>
+                    <div class="text">Walls / Obstacles</div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>Built with love and passion by Om Ujjwal.</footer>
+</body>
+</html>
