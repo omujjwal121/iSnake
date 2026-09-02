@@ -9,7 +9,15 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <nav class="navbar">iSnake</nav>
+    <nav class="navbar">
+        <img id="logo" src="Assets/iSnake-logo.png" alt="">
+        <div id="seg">
+            Survive. Eat. Grow.
+        </div>
+        <div class="settings">
+
+        </div>
+    </nav>
     <main>
         <aside class="panels left-panel">
             <div class="stats">
@@ -27,17 +35,17 @@
                 </div>
                 <div class="stat">
                     <p class="label">Speed</p>
-                    <p class="value">0</p>
+                    <p class="value" id="snake-speed">0</p>
                 </div>
             </div>
-            <div class="speed-status">
+            <!-- <div class="speed-status">
                 <p class="label">Next Speed</p>
                 <p class="value">Normal</p>
                 <p class="progress-text">320/500</p>
                 <div class="progress-bar">
                     <div class="progress-fill"></div>
                 </div>
-            </div>
+            </div> -->
             <div class="controls">
                 <div class="control">
                     <div class="keys">
@@ -56,18 +64,18 @@
                     <div class="key space-key">Space</div>
                     <div class="action">Play / Pause</div>
                 </div>
-                <div class="control">
+                <!-- <div class="control">
                     <div class="keys">
                         <div class="key speed-change-key">+ / -</div>
                     </div>
                     <div class="action">Change Speed</div>
-                </div>
+                </div> -->
             </div>
         </aside>
 
         <section class="game-area"><canvas id="game-screen"></canvas></section>
         
-        <aside class="panels right-panel">
+        <!-- <aside class="panels right-panel">
             <div class="game-status">
                 <div class="current-speed">
                     <p class="label">Current Speed</p>
@@ -110,8 +118,10 @@
                     <div class="text">Walls / Obstacles</div>
                 </div>
             </div>
-        </aside>
+        </aside> -->
     </main>
-    <footer>Built with love and passion by Om Ujjwal.</footer>
+    <footer>
+         <span>© 2026 <strong>iSnake</strong> | Handcrafted with ❤️ & passion by Om Ujjwal | Let's Connect : <a href="https://www.linkedin.com/in/om-ujjwal/"><img src="Assets/linkedin.png" style="width: 20px;"></a> <a href="mailto:omujjwal121@gmail.com"><img src="Assets/gmail.png" style="width: 20px;"></a></span>
+    </footer>
 </body>
 </html>

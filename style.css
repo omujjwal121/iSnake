@@ -28,10 +28,20 @@ nav{
     padding: 0 16px;
     font-weight: 700;
     font-size: 1.5rem;
-    /* height: 60px; */
+    height: 60px;
     display: flex;
     align-items: center;
     color: var(--label-color);
+}
+
+#logo{
+    height: 100%;
+    width: 10%;
+}
+
+#seg{
+    padding-left: 20px;
+    font-size: large;
 }
 
 main{
@@ -44,7 +54,7 @@ main{
 }
 /* -----------------------------------------------------panels------------------------------------------------------- */
 .panels{
-    width: 200px;
+    width: 250px;
     border-radius: 10px;
     gap: 10px;
     display: flex;
@@ -54,6 +64,7 @@ main{
     position: relative;
     overflow-y: auto;
     color: var(--label-color);
+    justify-content: space-between;
 }
 
 .stats{
@@ -115,7 +126,8 @@ main{
 .control{
     display: flex;
     align-items: center;
-    gap: 12px;
+    justify-content: space-between;
+    /* background-color: red; */
 }
 
 .keys{
@@ -195,18 +207,22 @@ main{
     background-color: #3A493A;
     border-radius: 10px;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #game-screen{
-    height: 580px;
-    width: 580px;
+    height: 100%;
+    width: 100%;
     border-radius: 8px;
     border: 1px solid var(--border);
 }
 
 footer{
     font-size: 0.8rem;
-    color: var(--text);
+    color: var(--label-color);
     text-align: center;
     padding: 12px;
     /* height: 40px; */
@@ -214,6 +230,7 @@ footer{
     align-items: center;
     justify-content: center;
     background-color: var(--background);
+    /* border-top: 1px solid var(--border); */
 }
 
 .panels, .game-area, .speed-status, .speed-boost, .legend{
@@ -233,18 +250,3 @@ footer{
 }
 
 /* ------------------------------------decorations------------------------------------------- */
-
-.panels::before {
-    content: "";
-    position: absolute;
-
-    top: 16px;
-    left: 16px;
-
-    width: 40px;
-    height: 40px;
-
-    border-radius: 0 100% 0 100%;
-    transform: rotate(-25deg);
-    background: rgba(139, 195, 74, 0.08);
-}
